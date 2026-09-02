@@ -1,0 +1,450 @@
+/* -------------------------
+   RESET
+------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f9fc;
+    color: #172033;
+    line-height: 1.6;
+}
+
+
+/* -------------------------
+   NAVBAR
+------------------------- */
+
+.navbar {
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #635bff;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #635bff;
+}
+
+.nav-btn {
+    border: none;
+    background: #635bff;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+/* -------------------------
+   HERO
+------------------------- */
+
+.hero {
+    text-align: center;
+    padding: 80px 20px 50px;
+}
+
+.small-title {
+    color: #635bff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero-text {
+    max-width: 650px;
+    margin: auto;
+    color: #667085;
+    font-size: 17px;
+}
+
+
+/* -------------------------
+   TOGGLE
+------------------------- */
+
+.toggle-container {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-weight: 600;
+}
+
+.active-text {
+    color: #635bff;
+}
+
+.toggle-container small {
+    color: #22a06b;
+    background: #e9f9f1;
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-size: 11px;
+    margin-left: 5px;
+}
+
+
+/* Switch */
+
+.switch {
+    position: relative;
+    width: 52px;
+    height: 28px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    background: #635bff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 3px;
+    top: 3px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(24px);
+}
+
+
+/* -------------------------
+   PRICING
+------------------------- */
+
+.pricing {
+    width: 84%;
+    max-width: 1200px;
+    margin: 20px auto 80px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* Card */
+
+.pricing-card {
+    position: relative;
+    background: white;
+    padding: 35px 30px;
+    border-radius: 15px;
+    border: 1px solid #e6e8ec;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+
+    transition: 0.3s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.09);
+}
+
+
+/* Popular */
+
+.popular {
+    border: 2px solid #635bff;
+    transform: scale(1.03);
+}
+
+.popular:hover {
+    transform: scale(1.03) translateY(-8px);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: #635bff;
+    color: white;
+
+    padding: 6px 18px;
+    border-radius: 30px;
+
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* Card Header */
+
+.card-header h2 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.card-header p {
+    color: #777;
+    font-size: 14px;
+    min-height: 45px;
+}
+
+
+/* Price */
+
+.price {
+    margin: 25px 0;
+    display: flex;
+    align-items: baseline;
+}
+
+.currency {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.amount {
+    font-size: 48px;
+    font-weight: 800;
+    margin-left: 3px;
+}
+
+.period {
+    color: #777;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+
+/* Button */
+
+.plan-btn {
+    width: 100%;
+    padding: 13px;
+
+    background: white;
+    color: #635bff;
+
+    border: 1px solid #635bff;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.plan-btn:hover,
+.plan-btn.primary {
+    background: #635bff;
+    color: white;
+}
+
+
+/* Divider */
+
+.divider {
+    height: 1px;
+    background: #eeeeee;
+    margin: 30px 0;
+}
+
+
+/* Features */
+
+.pricing-card h3 {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.pricing-card ul {
+    list-style: none;
+}
+
+.pricing-card li {
+    margin-bottom: 13px;
+    font-size: 14px;
+}
+
+.disabled {
+    color: #aaa;
+}
+
+
+/* -------------------------
+   FAQ
+------------------------- */
+
+.faq {
+    background: white;
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.faq > h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.faq-container {
+    max-width: 850px;
+    margin: auto;
+    display: grid;
+    gap: 15px;
+}
+
+.faq-item {
+    text-align: left;
+    padding: 22px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+.faq-item h3 {
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+
+.faq-item p {
+    color: #667085;
+    font-size: 14px;
+}
+
+
+/* -------------------------
+   FOOTER
+------------------------- */
+
+footer {
+    background: #172033;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+
+/* -------------------------
+   TABLET
+------------------------- */
+
+@media (max-width: 900px) {
+
+    .pricing {
+        grid-template-columns: 1fr;
+        max-width: 550px;
+    }
+
+    .popular {
+        transform: scale(1);
+    }
+
+    .popular:hover {
+        transform: translateY(-8px);
+    }
+
+    .navbar {
+        padding: 20px 5%;
+    }
+
+}
+
+
+/* -------------------------
+   MOBILE
+------------------------- */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .navbar nav {
+        gap: 18px;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .hero {
+        padding-top: 50px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    .pricing {
+        width: 90%;
+    }
+
+    .pricing-card {
+        padding: 30px 25px;
+    }
+
+    .faq {
+        padding: 50px 5%;
+    }
+
+    .faq > h2 {
+        font-size: 27px;
+    }
+
+}
