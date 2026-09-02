@@ -1,0 +1,1101 @@
+/* ------------- BASIC RESET ---------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #222;
+    background: #fff;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* -----------NAVBAR ----------- */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.navbar {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+}
+
+.logo span {
+    color: #ff7a00;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-menu a {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #ff7a00;
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* --------- HERO ------------ */
+
+.hero {
+    min-height: 100vh;
+
+    background-image:
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding-top: 75px;
+}
+
+.hero-subtitle {
+    color: #ff9a3c;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    max-width: 750px;
+    font-size: clamp(40px, 6vw, 72px);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #ff9a3c;
+}
+
+.hero-description {
+    max-width: 650px;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background: #ff7a00;
+    color: white;
+    border-radius: 6px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e56700;
+    transform: translateY(-2px);
+}
+
+
+/* ----------- GENERAL SECTION ----------*/
+
+.section {
+    padding: 100px 0;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 55px;
+}
+
+.section-subtitle {
+    color: #ff7a00;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.section-heading > p:last-child {
+    color: #666;
+}
+
+
+/* ------------ DESTINATIONS ------------ */
+
+.destinations {
+    background: #f8f8f8;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.destination-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.destination-card:hover {
+    transform: translateY(-8px);
+}
+
+.destination-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.destination-content {
+    padding: 22px;
+}
+
+.destination-content h3 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.destination-content p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.destination-content a {
+    color: #ff7a00;
+    font-weight: 600;
+}
+
+
+/* --------------- SERVICES ------------------- */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    text-align: center;
+    padding: 35px 25px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: #fff0e4;
+
+    font-size: 30px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+
+/* ---------------- PACKAGES ------------ */
+
+.packages {
+    background: #f8f8f8;
+}
+
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.package-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.package-card > img {
+    height: 240px;
+    object-fit: cover;
+}
+
+.package-content {
+    padding: 25px;
+}
+
+.package-location {
+    color: #ff7a00;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.package-content h3 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.package-content > p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.package-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 18px;
+    margin-bottom: 20px;
+}
+
+.package-info span {
+    color: #666;
+    font-size: 13px;
+}
+
+.package-info strong {
+    color: #ff7a00;
+    font-size: 18px;
+}
+
+.package-btn {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background: #222;
+    color: white;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.package-btn:hover {
+    background: #ff7a00;
+}
+
+
+/* --------------------- ABOUT ---------------- */
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.about-image img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.about-content h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.about-content > p:not(.section-subtitle) {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.about-features {
+    display: flex;
+    gap: 35px;
+    margin-top: 30px;
+}
+
+.about-features div {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-features strong {
+    color: #ff7a00;
+    font-size: 28px;
+}
+
+.about-features span {
+    font-size: 13px;
+    color: #666;
+}
+
+
+/* ------------- CONTACT ------------- */
+
+.contact {
+    background: #f8f8f8;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 50px;
+    background: white;
+    padding: 45px;
+    border-radius: 15px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.contact-info h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.contact-info > p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.contact-item > span {
+    font-size: 25px;
+}
+
+.contact-item strong {
+    display: block;
+}
+
+.contact-item p {
+    color: #666;
+    font-size: 14px;
+}
+
+
+/* ---------------- FORM ---------------- */
+
+.booking-form {
+    width: 100%;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #ff7a00;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-btn {
+    width: 100%;
+}
+
+
+/* ---------------- FOOTER --------------- */
+
+.footer {
+    background: #171717;
+    color: white;
+    padding-top: 60px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 50px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-column .logo {
+    margin-bottom: 10px;
+}
+
+.footer-column > p {
+    color: #aaa;
+    max-width: 300px;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #aaa;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: #ff7a00;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+    font-size: 13px;
+}
+
+
+/* -------------- TABLET -------------- */
+
+@media (max-width: 992px) {
+
+    .destination-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .package-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-container {
+        gap: 40px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/*-------------- MOBILE ---------------*/
+
+@media (max-width: 768px) {
+
+    .navbar {
+        height: 65px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 65px;
+        left: 0;
+
+        width: 100%;
+
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 0;
+
+        background: #171717;
+        padding: 10px 5%;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        width: 100%;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 13px 0;
+    }
+
+
+    .hero {
+        min-height: 90vh;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+
+    .destination-grid,
+    .services-grid,
+    .package-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image img {
+        height: 350px;
+    }
+
+    .about-content h2 {
+        font-size: 34px;
+    }
+
+    .about-features {
+        gap: 20px;
+    }
+
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ---------------- SMALL MOBILE -------------- */
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        font-size: 12px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .about-features {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .about-image img {
+        height: 280px;
+    }
+
+}
+
+/* =====================================================
+   LOGIN PAGE
+===================================================== */
+
+.login-page {
+    min-height: 100vh;
+    background: #f5f5f5;
+}
+
+
+/* ================= LOGIN SECTION ================= */
+
+.login-section {
+    min-height: 100vh;
+    padding: 120px 20px 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.08),
+            rgba(0, 0, 0, 0.08)
+        );
+}
+
+
+/* ================= LOGIN CONTAINER ================= */
+
+.login-container {
+    width: 100%;
+    max-width: 1050px;
+    min-height: 600px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ================= LOGIN IMAGE ================= */
+
+.login-image {
+    position: relative;
+
+    background-image:
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=85");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: flex-end;
+
+    min-height: 600px;
+}
+
+
+.login-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.15)
+        );
+}
+
+
+.login-image-content {
+    position: relative;
+
+    z-index: 1;
+
+    color: white;
+
+    padding: 45px;
+}
+
+
+.login-image-content h1 {
+    font-size: 42px;
+    line-height: 1.2;
+
+    margin-bottom: 15px;
+}
+
+
+.login-image-content p {
+    max-width: 400px;
+
+    font-size: 16px;
+
+    color: #eee;
+}
+
+
+/* ================= LOGIN FORM CONTAINER ================= */
+
+.login-form-container {
+    padding: 60px 55px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* ================= LOGIN HEADER ================= */
+
+.login-form-header {
+    margin-bottom: 30px;
+}
+
+
+.login-form-header h2 {
+    font-size: 32px;
+
+    line-height: 1.2;
+
+    margin-bottom: 10px;
+}
+
+
+.login-form-header > p:last-child {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* ================= PASSWORD ================= */
+
+.password-wrapper {
+    position: relative;
+}
+
+
+.password-wrapper input {
+    padding-right: 50px;
+}
+
+
+.password-toggle {
+    position: absolute;
+
+    right: 12px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 18px;
+}
+
+
+/* ================= LOGIN OPTIONS ================= */
+
+.login-options {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    font-size: 13px;
+}
+
+
+.remember-me {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    cursor: pointer;
+}
+
+
+.remember-me input {
+    accent-color: #ff7a00;
+}
+
+
+.login-options a {
+    color: #ff7a00;
+
+    font-weight: 600;
+}
+
+
+.login-options a:hover {
+    color: #e56700;
+}
+
+
+/* ================= LOGIN BUTTON ================= */
+
+.login-btn {
+    width: 100%;
+
+    padding: 14px;
+
+    font-size: 15px;
+}
+
+
+/* ================= REGISTER ================= */
+
+.register-text {
+    text-align: center;
+
+    margin-top: 25px;
+
+    font-size: 14px;
+
+    color: #666;
+}
+
+
+.register-text a {
+    color: #ff7a00;
+
+    font-weight: 600;
+}
+
+
+.register-text a:hover {
+    color: #e56700;
+}
+
+
+/* ================= BACK HOME ================= */
+
+.back-home {
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+
+.back-home:hover {
+    color: #ff7a00;
+}
+
+
+/* =====================================================
+   LOGIN RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .login-section {
+        padding: 100px 20px 40px;
+    }
+
+
+    .login-container {
+        grid-template-columns: 1fr;
+
+        max-width: 550px;
+    }
+
+
+    .login-image {
+        min-height: 300px;
+    }
+
+
+    .login-image-content {
+        padding: 30px;
+    }
+
+
+    .login-image-content h1 {
+        font-size: 32px;
+    }
+
+
+    .login-form-container {
+        padding: 40px 30px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .login-section {
+        padding: 90px 15px 30px;
+    }
+
+
+    .login-container {
+        border-radius: 12px;
+    }
+
+
+    .login-image {
+        min-height: 240px;
+    }
+
+
+    .login-image-content {
+        padding: 25px;
+    }
+
+
+    .login-image-content h1 {
+        font-size: 28px;
+    }
+
+
+    .login-image-content p {
+        font-size: 14px;
+    }
+
+
+    .login-form-container {
+        padding: 35px 20px;
+    }
+
+
+    .login-form-header h2 {
+        font-size: 27px;
+    }
+
+
+    .login-options {
+        font-size: 12px;
+    }
+
+
+    .back-home {
+        font-size: 13px;
+    }
+
+}
