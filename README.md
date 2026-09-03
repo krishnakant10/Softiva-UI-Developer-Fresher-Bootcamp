@@ -7,6 +7,9 @@ The bootcamp focuses on developing production-ready UI development skills using 
 
 The program follows a self-learning + mentor review model where assignments and projects are completed regularly and submitted through GitHub Pull Requests.
 
+
+
+
 🎯 Objectives
 
 The main objectives of this bootcamp are:
@@ -40,6 +43,9 @@ Figma
 Playwright
 Vercel / Azure Static Web Apps
 📚 Bootcamp Roadmap
+
+
+
 Week 1 — HTML, CSS & JavaScript Fundamentals
 
 Goal: Build responsive websites without using a frontend framework.
@@ -63,6 +69,9 @@ Company Landing Page
 Login Page
 Dashboard Layout
 Responsive Pricing Page
+
+
+
 Week 2 — TypeScript & React Foundations
 
 Goal: Understand component-based UI development using React.
@@ -87,6 +96,10 @@ Counter App
 Todo Application
 Employee Card Grid
 FAQ Accordion
+
+
+
+
 Week 3 — Tailwind & Modern UI Development
 
 Goal: Build professional dashboards and application layouts.
@@ -116,6 +129,10 @@ User Table
 Settings Page
 Profile Page
 Dark Mode Toggle
+
+
+
+
 Week 4 — APIs, Forms & State Management
 
 Goal: Connect frontend applications with backend services.
@@ -148,6 +165,10 @@ Export
 Dashboard Metrics
 
 The project can use a mock .NET Web API or JSONPlaceholder.
+
+
+
+
 
 Week 5 — Engineering Practices
 
@@ -197,6 +218,9 @@ shadcn/ui
 Responsive Design
 Dark Mode
 Deployment
+
+
+
 🔄 Development Workflow
 
 For every assignment, the development workflow includes:
@@ -218,6 +242,9 @@ Code Review
 Improve
 
 Every working day is expected to end with a Git Commit, GitHub Push, Pull Request, and Learning Journal Entry.
+
+
+
 
 📁 Suggested Repository Structure
 softiva-ui-bootcamp/
@@ -248,6 +275,9 @@ softiva-ui-bootcamp/
 │   └── mini-lekha/
 │
 └── README.md
+
+
+
 ✅ Assignment Submission Checklist
 
 For every assignment, the following should be included:
