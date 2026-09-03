@@ -1,5 +1,7 @@
 Softiva UI Developer Fresher Bootcamp
-📌 Overview
+
+
+ Overview
 
 This repository contains my work and learning progress during the Softiva UI Developer Fresher Bootcamp.
 
