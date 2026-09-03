@@ -189,6 +189,9 @@ Feature Branch Workflow
 PR-Based Development
 Basic Playwright Test Suite
 Public Deployment of Application
+
+
+
 Week 6 — Softiva Capstone Project
 🚀 Mini Lekha Frontend
 
@@ -314,7 +317,9 @@ UX
 Responsiveness
 Deployment
 Documentation
-🏆 Completion Benchmark
+
+ 
+ Completion Benchmark
 
 The trainee is considered Softiva UI Developer Ready when they can independently:
 
@@ -337,13 +342,15 @@ Week 6	Mini Lekha Capstone	⬜
 
 Update the status as you progress through the bootcamp.
 
-👨‍💻 Author
+👨‍💻
+Author
 
 Krishnakant
 
 UI Developer Fresher Bootcamp
 Softiva
 
-📄 License
+
+ License
 
 This repository is created for learning, training, and bootcamp development purposes.
