@@ -44,6 +44,9 @@ Git & GitHub
 Figma
 Playwright
 Vercel / Azure Static Web Apps
+
+
+
 📚 Bootcamp Roadmap
 
 
